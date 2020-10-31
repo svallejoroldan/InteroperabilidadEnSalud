@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/CampoSerial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/serial"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/CampoPulso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/valor_del_pulso"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/CampoOxigeno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/valor_del_oxigeno"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/CampoFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/fecha"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/BtnLeer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/leer"
+            tools:text="leer" />
+
+        <Button
+            android:id="@+id/BtnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Enviar"
+            tools:text="Enviar" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
