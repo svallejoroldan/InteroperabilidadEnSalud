@@ -1,14 +1,22 @@
 package com.tutsplus.matt.bluetoothscanner;
 
 import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Message;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import java.lang.reflect.Method;
 
 
 public class ListActivity extends AppCompatActivity implements DeviceListFragment.OnFragmentInteractionListener  {
@@ -19,7 +27,9 @@ public class ListActivity extends AppCompatActivity implements DeviceListFragmen
 
 
     public static int REQUEST_BLUETOOTH = 1;
-    
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +70,14 @@ public class ListActivity extends AppCompatActivity implements DeviceListFragmen
         getMenuInflater().inflate(R.menu.menu_list, menu);
         return true;
     }
+
+    //Nuevo código:
+
+
+
+
+
+    //Aquí termina nuevo código
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

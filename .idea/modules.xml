@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/InteroperabilidadEnSalud.iml" filepath="$PROJECT_DIR$/.idea/InteroperabilidadEnSalud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/InteroperabilidadEnSalud.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/InteroperabilidadEnSalud.app.iml" />
     </modules>
   </component>
 </project>
