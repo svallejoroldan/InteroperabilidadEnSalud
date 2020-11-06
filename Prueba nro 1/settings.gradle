@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "SpO2 BLE"
